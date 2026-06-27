@@ -1,0 +1,458 @@
+{
+  "usuarios": [
+    {
+      "id": "u-admin",
+      "nombre": "Franco",
+      "apellido": "Gómez",
+      "correo": "admin@gympro.com",
+      "rol": "Administrador",
+      "estado": "activo",
+      "fecha_creacion": "2026-01-10T12:00:00Z"
+    },
+    {
+      "id": "u-recep",
+      "nombre": "Valentina",
+      "apellido": "Martínez",
+      "correo": "recep@gympro.com",
+      "rol": "Recepcionista",
+      "estado": "activo",
+      "fecha_creacion": "2026-02-15T09:30:00Z"
+    },
+    {
+      "id": "u-gerente",
+      "nombre": "Santiago",
+      "apellido": "Fernández",
+      "correo": "gerente@gympro.com",
+      "rol": "Gerente",
+      "estado": "activo",
+      "fecha_creacion": "2026-01-05T08:00:00Z"
+    }
+  ],
+  "planes": [
+    {
+      "id": "p-musculacion",
+      "nombre": "Plan Musculación Mensual",
+      "descripcion": "Acceso libre a la sala de musculación y cardio de lunes a sábado.",
+      "precio": 35000,
+      "duracion_dias": 30,
+      "estado": "activo"
+    },
+    {
+      "id": "p-crossfit",
+      "nombre": "Plan Crossfit Elite",
+      "descripcion": "Clases dirigidas de Crossfit, halterofilia y entrenamientos funcionales de alta intensidad.",
+      "precio": 45000,
+      "duracion_dias": 30,
+      "estado": "activo"
+    },
+    {
+      "id": "p-pase-diario",
+      "nombre": "Pase Diario",
+      "descripcion": "Acceso por un único día a todas las instalaciones del gimnasio.",
+      "precio": 4000,
+      "duracion_dias": 1,
+      "estado": "activo"
+    },
+    {
+      "id": "p-anual-pro",
+      "nombre": "Plan Anual PRO",
+      "descripcion": "Acceso total anual. Musculación, Clases ilimitadas, 1 evaluación física mensual con nutricionista.",
+      "precio": 320000,
+      "duracion_dias": 365,
+      "estado": "activo"
+    }
+  ],
+  "socios": [
+    {
+      "id": "s-01",
+      "nombre": "Carlos",
+      "apellido": "Rodríguez",
+      "dni": "38291834",
+      "fecha_nacimiento": "1994-05-14",
+      "sexo": "Masculino",
+      "telefono": "+54 9 11 5493-2019",
+      "correo": "carlos.rod@gmail.com",
+      "direccion": "Av. Cabildo 2450, Belgrano",
+      "ciudad": "CABA",
+      "provincia": "Buenos Aires",
+      "peso": 82.5,
+      "altura": 180,
+      "objetivo": "Aumentar masa muscular (hipertrofia) y mejorar fuerza general.",
+      "observaciones": "Operación de ligamentos cruzados en rodilla derecha hace 3 años. Evitar cargas extremas en sentadilla sin supervisión.",
+      "plan_id": "p-musculacion",
+      "estado": "activo",
+      "qr": "socio-s-01",
+      "fecha_registro": "2026-03-01T10:00:00Z"
+    },
+    {
+      "id": "s-02",
+      "nombre": "María Laura",
+      "apellido": "Alvarez",
+      "dni": "41528913",
+      "fecha_nacimiento": "1999-11-22",
+      "sexo": "Femenino",
+      "telefono": "+54 9 11 3822-1049",
+      "correo": "mlaura.alvarez@outlook.com",
+      "direccion": "Corrientes 1580, Balvanera",
+      "ciudad": "CABA",
+      "provincia": "Buenos Aires",
+      "peso": 61.2,
+      "altura": 165,
+      "objetivo": "Resistencia cardiovascular, tonificación de tren inferior y pérdida de grasa.",
+      "observaciones": "Asiste regularmente a clases de las 19:00 hs.",
+      "plan_id": "p-crossfit",
+      "estado": "activo",
+      "qr": "socio-s-02",
+      "fecha_registro": "2026-04-12T17:30:00Z"
+    },
+    {
+      "id": "s-03",
+      "nombre": "Esteban",
+      "apellido": "Pérez",
+      "dni": "35891724",
+      "fecha_nacimiento": "1990-08-03",
+      "sexo": "Masculino",
+      "telefono": "+54 9 11 9283-4822",
+      "correo": "esteban.p@gmail.com",
+      "direccion": "Maipú 840, Retiro",
+      "ciudad": "CABA",
+      "provincia": "Buenos Aires",
+      "peso": 95.0,
+      "altura": 178,
+      "objetivo": "Recomposición corporal y acondicionamiento aeróbico.",
+      "observaciones": "Padece de asma leve, siempre lleva su inhalador.",
+      "plan_id": "p-musculacion",
+      "estado": "vencido",
+      "qr": "socio-s-03",
+      "fecha_registro": "2026-01-15T08:15:00Z"
+    },
+    {
+      "id": "s-04",
+      "nombre": "Sofía",
+      "apellido": "Bianchi",
+      "dni": "43901238",
+      "fecha_nacimiento": "2002-03-30",
+      "sexo": "Femenino",
+      "telefono": "+54 9 11 6788-9011",
+      "correo": "sofia_bianchi@live.com",
+      "direccion": "Av. Santa Fe 3120, Palermo",
+      "ciudad": "CABA",
+      "provincia": "Buenos Aires",
+      "peso": 55.4,
+      "altura": 160,
+      "objetivo": "Flexibilidad, resistencia funcional y crossfit avanzado.",
+      "observaciones": "Ninguna de cuidado médico.",
+      "plan_id": "p-crossfit",
+      "estado": "deudor",
+      "qr": "socio-s-04",
+      "fecha_registro": "2026-05-02T19:00:00Z"
+    },
+    {
+      "id": "s-05",
+      "nombre": "Lucas",
+      "apellido": "González",
+      "dni": "37112349",
+      "fecha_nacimiento": "1992-07-19",
+      "sexo": "Masculino",
+      "telefono": "+54 9 11 4099-2811",
+      "correo": "gonzalez.lucas@gmail.com",
+      "direccion": "Av. Rivadavia 4900, Caballito",
+      "ciudad": "CABA",
+      "provincia": "Buenos Aires",
+      "peso": 78.0,
+      "altura": 174,
+      "objetivo": "Salud general, mejora de postura y fuerza en zona lumbar.",
+      "observaciones": "Suele entrenar temprano por la mañana (7:00 AM).",
+      "plan_id": "p-anual-pro",
+      "estado": "activo",
+      "qr": "socio-s-05",
+      "fecha_registro": "2026-02-01T07:30:00Z"
+    }
+  ],
+  "pagos": [
+    {
+      "id": "pay-01",
+      "socio_id": "s-01",
+      "socio_nombre": "Carlos Rodríguez",
+      "plan_id": "p-musculacion",
+      "plan_nombre": "Plan Musculación Mensual",
+      "monto": 35000,
+      "metodo_pago": "Efectivo",
+      "fecha_pago": "2026-06-01T11:20:00Z",
+      "fecha_vencimiento": "2026-07-01T23:59:59Z",
+      "estado": "aprobado",
+      "comprobante_numero": "REC-2026-0034"
+    },
+    {
+      "id": "pay-02",
+      "socio_id": "s-02",
+      "socio_nombre": "María Laura Alvarez",
+      "plan_id": "p-crossfit",
+      "plan_nombre": "Plan Crossfit Elite",
+      "monto": 45000,
+      "metodo_pago": "Mercado Pago",
+      "fecha_pago": "2026-06-12T18:45:00Z",
+      "fecha_vencimiento": "2026-07-12T23:59:59Z",
+      "estado": "aprobado",
+      "comprobante_numero": "REC-2026-0042"
+    },
+    {
+      "id": "pay-03",
+      "socio_id": "s-03",
+      "socio_nombre": "Esteban Pérez",
+      "plan_id": "p-musculacion",
+      "plan_nombre": "Plan Musculación Mensual",
+      "monto": 35000,
+      "metodo_pago": "Transferencia",
+      "fecha_pago": "2026-04-15T09:10:00Z",
+      "fecha_vencimiento": "2026-05-15T23:59:59Z",
+      "estado": "aprobado",
+      "comprobante_numero": "REC-2026-0012"
+    },
+    {
+      "id": "pay-04",
+      "socio_id": "s-05",
+      "socio_nombre": "Lucas González",
+      "plan_id": "p-anual-pro",
+      "plan_nombre": "Plan Anual PRO",
+      "monto": 320000,
+      "metodo_pago": "Tarjeta de Crédito",
+      "fecha_pago": "2026-02-01T08:00:00Z",
+      "fecha_vencimiento": "2027-02-01T23:59:59Z",
+      "estado": "aprobado",
+      "comprobante_numero": "REC-2026-0002"
+    }
+  ],
+  "asistencias": [
+    {
+      "id": "ast-01",
+      "socio_id": "s-01",
+      "socio_nombre": "Carlos Rodríguez",
+      "fecha": "2026-06-24",
+      "hora": "09:15:30"
+    },
+    {
+      "id": "ast-02",
+      "socio_id": "s-02",
+      "socio_nombre": "María Laura Alvarez",
+      "fecha": "2026-06-24",
+      "hora": "19:02:11"
+    },
+    {
+      "id": "ast-03",
+      "socio_id": "s-05",
+      "socio_nombre": "Lucas González",
+      "fecha": "2026-06-24",
+      "hora": "07:44:02"
+    },
+    {
+      "id": "ast-04",
+      "socio_id": "s-01",
+      "socio_nombre": "Carlos Rodríguez",
+      "fecha": "2026-06-23",
+      "hora": "09:30:15"
+    },
+    {
+      "id": "ast-05",
+      "socio_id": "s-02",
+      "socio_nombre": "María Laura Alvarez",
+      "fecha": "2026-06-23",
+      "hora": "19:10:00"
+    },
+    {
+      "id": "ast-06",
+      "socio_id": "s-05",
+      "socio_nombre": "Lucas González",
+      "fecha": "2026-06-22",
+      "hora": "07:35:10"
+    }
+  ],
+  "entrenadores": [
+    {
+      "id": "e-01",
+      "nombre": "Marcos",
+      "apellido": "Giménez",
+      "especialidad": "Musculación, Powerlifting, Entrenamiento de Fuerza",
+      "telefono": "+54 9 11 2049-9302",
+      "correo": "marcos.gym@hotmail.com",
+      "estado": "activo"
+    },
+    {
+      "id": "e-02",
+      "nombre": "Lucía",
+      "apellido": "Torres",
+      "especialidad": "Crossfit L1, Gimnasia Olímpica, Halterofilia",
+      "telefono": "+54 9 11 5903-1122",
+      "correo": "lucia_t_cf@gmail.com",
+      "estado": "activo"
+    },
+    {
+      "id": "e-03",
+      "nombre": "Damian",
+      "apellido": "Sosa",
+      "especialidad": "Spinning, Funcional, Recomposición Corporal",
+      "telefono": "+54 9 11 8839-4091",
+      "correo": "sosadamian@gmail.com",
+      "estado": "activo"
+    }
+  ],
+  "rutinas": [
+    {
+      "id": "r-01",
+      "socio_id": "s-01",
+      "socio_nombre": "Carlos Rodríguez",
+      "entrenador_id": "e-01",
+      "entrenador_nombre": "Marcos Giménez",
+      "nombre": "Fuerza e Hipertrofia Tren Superior",
+      "descripcion": "Rutina enfocada en fuerza básica y desarrollo muscular de torso.",
+      "fecha_creacion": "2026-06-15T12:00:00Z",
+      "ejercicios": [
+        {
+          "id": "ex-01",
+          "ejercicio": "Press de Banca Plano",
+          "series": 4,
+          "repeticiones": "6-8",
+          "peso": "70kg",
+          "descanso": "120s"
+        },
+        {
+          "id": "ex-02",
+          "ejercicio": "Remo con Barra",
+          "series": 4,
+          "repeticiones": "8-10",
+          "peso": "60kg",
+          "descanso": "90s"
+        },
+        {
+          "id": "ex-03",
+          "ejercicio": "Press Militar con Mancuernas",
+          "series": 3,
+          "repeticiones": "10-12",
+          "peso": "20kg c/u",
+          "descanso": "90s"
+        },
+        {
+          "id": "ex-04",
+          "ejercicio": "Dominadas Pronas",
+          "series": 3,
+          "repeticiones": "al fallo",
+          "peso": "Corporal",
+          "descanso": "90s"
+        },
+        {
+          "id": "ex-05",
+          "ejercicio": "Curl de Biceps + Extensión de Triceps polea",
+          "series": 3,
+          "repeticiones": "12-15 (Superserie)",
+          "peso": "Moderado",
+          "descanso": "60s"
+        }
+      ]
+    },
+    {
+      "id": "r-02",
+      "socio_id": "s-02",
+      "socio_nombre": "María Laura Alvarez",
+      "entrenador_id": "e-02",
+      "entrenador_nombre": "Lucía Torres",
+      "nombre": "WOD Crossfit - Acondicionamiento Metabólico",
+      "descripcion": "AMRAP de 20 minutos de alta intensidad metabólica y gimnasia.",
+      "fecha_creacion": "2026-06-18T10:30:00Z",
+      "ejercicios": [
+        {
+          "id": "ex-06",
+          "ejercicio": "Wall Ball Shots (Balón a la Pared)",
+          "series": 1,
+          "repeticiones": "20 reps",
+          "peso": "6kg (14 lbs)",
+          "descanso": "Mínimo"
+        },
+        {
+          "id": "ex-07",
+          "ejercicio": "Kettlebell Swings (Ruso)",
+          "series": 1,
+          "repeticiones": "15 reps",
+          "peso": "16kg",
+          "descanso": "Mínimo"
+        },
+        {
+          "id": "ex-08",
+          "ejercicio": "Burpees sobre la barra",
+          "series": 1,
+          "repeticiones": "10 reps",
+          "peso": "-",
+          "descanso": "Mínimo"
+        },
+        {
+          "id": "ex-09",
+          "ejercicio": "Toes to Bar (Pies a la barra)",
+          "series": 1,
+          "repeticiones": "10 reps",
+          "peso": "-",
+          "descanso": "Mínimo"
+        }
+      ]
+    }
+  ],
+  "notificaciones": [
+    {
+      "id": "not-01",
+      "socio_id": "s-03",
+      "socio_nombre": "Esteban Pérez",
+      "titulo": "Plan Vencido",
+      "mensaje": "El plan mensual del socio ha vencido el 15/05/2026. Alerta de renovación enviada por correo electrónico.",
+      "leida": false,
+      "tipo": "email",
+      "fecha": "2026-06-20T09:00:00Z"
+    },
+    {
+      "id": "not-02",
+      "socio_id": "s-04",
+      "socio_nombre": "Sofía Bianchi",
+      "titulo": "Socio Moroso",
+      "mensaje": "Socio ingresó a la lista de deudores. Alerta de aviso de cobro programada por WhatsApp.",
+      "leida": true,
+      "tipo": "whatsapp",
+      "fecha": "2026-06-22T14:15:00Z"
+    }
+  ],
+  "auditoria": [
+    {
+      "id": "aud-01",
+      "usuario_id": "u-admin",
+      "usuario_nombre": "Franco Gómez",
+      "accion": "Creación de nuevo Socio: Carlos Rodríguez",
+      "tabla_afectada": "socios",
+      "fecha": "2026-03-01T10:00:00Z"
+    },
+    {
+      "id": "aud-02",
+      "usuario_id": "u-recep",
+      "usuario_nombre": "Valentina Martínez",
+      "accion": "Registro de Pago: Carlos Rodríguez - $35000",
+      "tabla_afectada": "pagos",
+      "fecha": "2026-06-01T11:20:00Z"
+    },
+    {
+      "id": "aud-03",
+      "usuario_id": "u-admin",
+      "usuario_nombre": "Franco Gómez",
+      "accion": "Modificación de Plan de Musculación: Ajuste de tarifa de $32000 a $35000",
+      "tabla_afectada": "planes",
+      "fecha": "2026-05-30T16:00:00Z"
+    }
+  ],
+  "configuracion": {
+    "nombre_gimnasio": "GIMNASIO PRO FITNESS",
+    "cuit": "30-71829302-9",
+    "telefono": "+54 9 11 4930-1022",
+    "correo": "contacto@gymprofitness.com",
+    "direccion": "Av. Cabildo 1500, Belgrano, CABA",
+    "moneda": "ARS",
+    "mercado_pago_sandbox": true,
+    "notificaciones_email_activas": true,
+    "notificaciones_whatsapp_activas": true,
+    "plantilla_bienvenida": "¡Hola {nombre}! Te damos la bienvenida a GIMNASIO PRO FITNESS. Tu plan {plan} está activo hasta el {vencimiento}. ¡A entrenar con todo!",
+    "plantilla_vencimiento": "Estimado/a {nombre}, te recordamos que tu suscripción {plan} vence el {vencimiento}. Acercate a recepción o realiza tu transferencia para seguir entrenando sin interrupciones."
+  }
+}

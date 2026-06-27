@@ -1,0 +1,6 @@
+{
+  "name": "Sistema de Gestión para Gimnasios PRO",
+  "description": "Sistema profesional de gestión de socios, planes, pagos, asistencias, entrenadores y rutinas.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
